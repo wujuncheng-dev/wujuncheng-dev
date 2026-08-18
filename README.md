@@ -27,7 +27,7 @@
 - 🌱 Deep-diving into **LangChain / LangGraph**, RAG pipelines, and multi-agent systems
 - ⚙️ I automate everything that gets repeated twice
 - 🛠️ Love building small tools that make daily development smoother
-- 🚀 Preparing to **open-source my own projects** — stay tuned!
+- 🚀 Open-sourced my own projects under [**VibeStack-AI**](https://github.com/VibeStack-AI) — check them out below!
 - 💬 Ask me about Python automation, LLM apps, and dev workflows
 
 </td>
@@ -47,6 +47,45 @@
 </tr>
 </table>
 
+## VibeStack-AI
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/VibeStack-AI/agent-rules">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VibeStack-AI&repo=agent-rules&theme=default&hide_border=true&bg=ffffff&title_color=0284c7&text_color=334155&icon_color=0ea5e9" alt="agent-rules" />
+</a>
+
+One rulebook, two agents. `agent-rules` keeps the global rules for Claude Code and Codex CLI in sync so I don't end up editing the same file in two places.
+
+- Single source of truth in `rules/core.md`; `make sync` generates the per-platform files.
+- `make install` symlinks `~/.claude/CLAUDE.md` and `~/.codex/AGENTS.md`; `--dry-run`, `make status`, `make uninstall` are all there.
+- Existing files are auto-backed up to `.bak.<timestamp>` before install.
+- CI checks that `dist/` matches `rules/` so nothing drifts silently.
+- Optional CodeGraph integration: when a project has `.codegraph/`, the rules tell the agent to explore symbols before touching files.
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/VibeStack-AI/vibestack-fastapi">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VibeStack-AI&repo=vibestack-fastapi&theme=default&hide_border=true&bg=ffffff&title_color=0284c7&text_color=334155&icon_color=0ea5e9" alt="vibestack-fastapi" />
+</a>
+
+A FastAPI template I keep coming back to. `vibestack-fastapi` is the version I'd start a new internal service from today.
+
+- Split client / backoffice APIs with separate Swagger and ReDoc.
+- Async throughout: FastAPI, SQLAlchemy 2.0 async, Celery for background work.
+- Postgres + Redis + Alembic migrations; JWT auth on the backoffice side.
+- Documentation nav gated by `ENV` — off in production, OpenAPI JSON export still available.
+- `docker-compose up -d` brings up Postgres, Redis, and the app.
+
+</td>
+</tr>
+</table>
+
+<sub><a href="https://github.com/VibeStack-AI">VibeStack-AI</a> is the org I keep these projects under.</sub>
+
 ## 📊 GitHub Stats
 
 <div align="center">
@@ -56,6 +95,19 @@
 <br/><br/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=wujuncheng-dev&theme=minimal&hide_border=true&color=0c4a6e&line=0284c7&point=0ea5e9&area=true&area_color=e0f2fe" width="94%" alt="Activity Graph" />
+
+</div>
+
+## Popular repositories
+
+<div align="center">
+
+<a href="https://github.com/VibeStack-AI/agent-rules">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VibeStack-AI&repo=agent-rules&theme=default&hide_border=true&bg=ffffff&title_color=0284c7&text_color=334155&icon_color=0ea5e9" alt="agent-rules" />
+</a>
+<a href="https://github.com/VibeStack-AI/vibestack-fastapi">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VibeStack-AI&repo=vibestack-fastapi&theme=default&hide_border=true&bg=ffffff&title_color=0284c7&text_color=334155&icon_color=0ea5e9" alt="vibestack-fastapi" />
+</a>
 
 </div>
 
