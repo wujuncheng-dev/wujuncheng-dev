@@ -25,6 +25,7 @@
 
 - 🔭 Working on **backend services** and **AI-agent tooling**
 - 🚀 I ship my open source under [**VibeStack-AI**](https://github.com/VibeStack-AI) — see below
+- 🤖 I code with **Codex**, **Claude Code**, **Gemini** and **Grok** every day
 - 🌱 Deep-diving into **LangChain / LangGraph**, RAG pipelines, and multi-agent systems
 - ⚙️ I automate everything that gets repeated twice
 - 💬 Ask me about Python automation, LLM apps, and dev workflows
@@ -33,6 +34,10 @@
 <td width="45%" valign="top">
 
 ## 🧰 Tech Stack
+
+**AI Coding**
+
+<img src="assets/ai-tools.svg" alt="Codex, Claude Code, Gemini, Grok" />
 
 **Languages**
 
