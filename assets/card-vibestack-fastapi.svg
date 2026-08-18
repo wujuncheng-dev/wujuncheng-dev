@@ -1,0 +1,49 @@
+<svg width="420" height="176" viewBox="0 0 420 176" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .f     { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .title { font-size: 19px; font-weight: 700; fill: #0284c7; }
+    .desc  { font-size: 13.5px; fill: #57606a; }
+    .chip  { font-size: 11.5px; font-weight: 500; fill: #57606a; }
+    .frame { stroke: #0284c7; stroke-opacity: 0.35; }
+    .pill  { stroke: #57606a; stroke-opacity: 0.4; }
+
+    @media (prefers-color-scheme: dark) {
+      .title { fill: #38bdf8; }
+      .desc  { fill: #9198a1; }
+      .chip  { fill: #9198a1; }
+      .frame { stroke: #38bdf8; stroke-opacity: 0.4; }
+      .pill  { stroke: #9198a1; stroke-opacity: 0.4; }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+  </defs>
+
+  <rect class="frame" x="0.5" y="0.5" width="419" height="175" rx="12" fill="none"/>
+
+  <circle cx="22" cy="27" r="5" fill="#3572a5"/>
+  <text class="f title" x="36" y="33">vibestack-fastapi</text>
+  <rect x="22" y="48" width="44" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <text class="f desc" x="22" y="78">The FastAPI base I start new services from:</text>
+  <text class="f desc" x="22" y="99">async top to bottom, client / backoffice APIs split.</text>
+
+  <g class="pill" fill="none">
+    <rect x="22" y="122" width="64" height="24" rx="12"/>
+    <rect x="94" y="122" width="83" height="24" rx="12"/>
+    <rect x="185" y="122" width="52" height="24" rx="12"/>
+    <rect x="245" y="122" width="58" height="24" rx="12"/>
+    <rect x="311" y="122" width="58" height="24" rx="12"/>
+  </g>
+  <g class="f chip" text-anchor="middle">
+    <text x="54" y="138">FastAPI</text>
+    <text x="135.5" y="138">PostgreSQL</text>
+    <text x="211" y="138">Redis</text>
+    <text x="274" y="138">Celery</text>
+    <text x="340" y="138">Docker</text>
+  </g>
+</svg>

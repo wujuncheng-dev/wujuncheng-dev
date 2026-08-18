@@ -1,0 +1,47 @@
+<svg width="420" height="176" viewBox="0 0 420 176" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .f     { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .title { font-size: 19px; font-weight: 700; fill: #0284c7; }
+    .desc  { font-size: 13.5px; fill: #57606a; }
+    .chip  { font-size: 11.5px; font-weight: 500; fill: #57606a; }
+    .frame { stroke: #0284c7; stroke-opacity: 0.35; }
+    .pill  { stroke: #57606a; stroke-opacity: 0.4; }
+
+    @media (prefers-color-scheme: dark) {
+      .title { fill: #38bdf8; }
+      .desc  { fill: #9198a1; }
+      .chip  { fill: #9198a1; }
+      .frame { stroke: #38bdf8; stroke-opacity: 0.4; }
+      .pill  { stroke: #9198a1; stroke-opacity: 0.4; }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+  </defs>
+
+  <rect class="frame" x="0.5" y="0.5" width="419" height="175" rx="12" fill="none"/>
+
+  <circle cx="22" cy="27" r="5" fill="#89e051"/>
+  <text class="f title" x="36" y="33">agent-rules</text>
+  <rect x="22" y="48" width="44" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <text class="f desc" x="22" y="78">One rulebook, two agents. A single source of</text>
+  <text class="f desc" x="22" y="99">truth that keeps Claude Code and Codex CLI aligned.</text>
+
+  <g class="pill" fill="none">
+    <rect x="22" y="122" width="52" height="24" rx="12"/>
+    <rect x="82" y="122" width="45" height="24" rx="12"/>
+    <rect x="135" y="122" width="89" height="24" rx="12"/>
+    <rect x="232" y="122" width="39" height="24" rx="12"/>
+  </g>
+  <g class="f chip" text-anchor="middle">
+    <text x="48" y="138">Shell</text>
+    <text x="104.5" y="138">Make</text>
+    <text x="179.5" y="138">CI-verified</text>
+    <text x="251.5" y="138">MIT</text>
+  </g>
+</svg>
